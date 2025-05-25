@@ -10,7 +10,9 @@ import { createClient } from "@supabase/supabase-js";
 
 /* ------------------ Supabase config ------------------ */
 const env = (typeof import.meta !== "undefined" && import.meta.env) || {};
-const SUPABASE_URL = (env.VITE_SUPABASE_URL || "https://zrmfsqjjesqfrkapnmxe.supabase.co").replace(/\/$/, "");
+const SUPABASE_URL =
+  (env.VITE_SUPABASE_URL ||
+    "https://zrmfsqjjesqfrkapnmxe.supabase.co").replace(/\/$/, "");
 const SUPABASE_ANON =
   env.VITE_SUPABASE_ANON_KEY ||
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpybWZzcWpqZXNxZnJrYXBubXhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDczNzA1MDQsImV4cCI6MjA2Mjk0NjUwNH0.KZtlnZEq0bwHRQlTWj344Vl-aw8GjdiM3dMiBnc2VfM";
